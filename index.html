@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elavarasan S R | Doctor of Pharmacy (Pharm.D) Candidate | Clinical Research & Pharmacovigilance</title>
+  <meta name="description" content="Official Portfolio of Elavarasan S R — Doctor of Pharmacy (Pharm.D) Candidate specializing in Clinical Research, Pharmacovigilance, Hospital Pharmacy, and Patient Safety." />
+  
+  <!-- Open Graph / Social Media Preview Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Elavarasan S R | Doctor of Pharmacy (Pharm.D) Candidate">
+  <meta property="og:description" content="Dedicated Pharm.D Candidate with clinical clerkship expertise in hospital pharmacy, pharmacovigilance, ADR reporting, prescription audits, and epidemiological data analysis.">
+  <meta property="og:image" content="./profile.png">
+  <meta property="author" content="Elavarasan S R">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Elavarasan S R | Pharm.D Candidate | Clinical Research & PV">
+  <meta name="twitter:description" content="Dedicated Pharm.D Candidate specializing in Clinical Research, Pharmacovigilance, Patient Safety, and Evidence-Based Medicine.">
+  <meta name="twitter:image" content="./profile.png">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* ================= PROFESSIONAL THEME BACKGROUNDS ================= */
+    html.dark body {
+      background-color: #050811;
+      background-image:
+        radial-gradient(circle at 15% 15%, rgba(30, 58, 138, 0.15), transparent 42%),
+        radial-gradient(circle at 85% 80%, rgba(15, 118, 110, 0.10), transparent 45%);
+      color: #f8fafc;
+    }
+
+    html:not(.dark) body {
+      background-color: #f1f5f9;
+      background-image:
+        radial-gradient(circle at 15% 10%, rgba(226, 232, 240, 0.85), transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(209, 250, 229, 0.35), transparent 50%),
+        linear-gradient(180deg, #f8fafc 0%, #eef2f6 100%);
+      color: #0f172a;
+    }
+
+    /* ================= INTERACTIVE LIQUID GLASS CARDS (LOCKED) ================= */
+    .liquid-glass {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                  box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                  border-color 0.28s ease;
+    }
+
+    .liquid-glass > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    html.dark .liquid-glass {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.72) 0%, rgba(9, 13, 24, 0.62) 100%);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 20px 45px -15px rgba(0, 0, 0, 0.7),
+        inset 0 1px 1.5px rgba(255, 255, 255, 0.16);
+    }
+
+    html:not(.dark) .liquid-glass {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.86) 0%, rgba(248, 250, 252, 0.76) 100%);
+      backdrop-filter: blur(22px) saturate(170%);
+      -webkit-backdrop-filter: blur(22px) saturate(170%);
+      border: 1px solid rgba(15, 23, 42, 0.10);
+      box-shadow:
+        0 14px 34px -12px rgba(15, 23, 42, 0.08),
+        inset 0 1.5px 2px rgba(255, 255, 255, 0.95);
+    }
+
+    /* Subtle Cursor Specular Reflection (Never hides text) */
+    .liquid-glass::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(
+        380px circle at var(--card-x, -200px) var(--card-y, -200px),
+        rgba(255, 255, 255, 0.05),
+        transparent 50%
+      );
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 0;
+    }
+
+    html:not(.dark) .liquid-glass::before {
+      background: radial-gradient(
+        380px circle at var(--card-x, -200px) var(--card-y, -200px),
+        rgba(15, 23, 42, 0.03),
+        transparent 50%
+      );
+    }
+
+    .liquid-glass:hover::before {
+      opacity: 1;
+    }
+
+    html.dark .liquid-glass:hover {
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+    html:not(.dark) .liquid-glass:hover {
+      border-color: rgba(15, 23, 42, 0.20);
+    }
+
+    /* ================= LIQUID GLASS BUTTONS & PILLS (LOCKED) ================= */
+    .liquid-btn {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+      backdrop-filter: blur(18px) saturate(180%);
+      -webkit-backdrop-filter: blur(18px) saturate(180%);
+    }
+
+    html.dark .liquid-btn {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      box-shadow:
+        0 8px 22px -6px rgba(0, 0, 0, 0.55),
+        inset 0 1.5px 2px rgba(255, 255, 255, 0.32),
+        inset 0 -1.5px 2px rgba(0, 0, 0, 0.35);
+      color: #f8fafc;
+    }
+
+    html:not(.dark) .liquid-btn {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(241, 245, 249, 0.78) 100%);
+      border: 1px solid rgba(15, 23, 42, 0.15);
+      box-shadow:
+        0 6px 18px -6px rgba(15, 23, 42, 0.12),
+        inset 0 2px 3px rgba(255, 255, 255, 1),
+        inset 0 -1px 2px rgba(15, 23, 42, 0.06);
+      color: #0f172a;
+    }
+
+    .liquid-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+    }
+
+    .liquid-btn:active {
+      transform: translateY(0px) scale(0.97);
+    }
+
+    .liquid-btn-primary {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.95) 0%, rgba(5, 150, 105, 0.90) 100%) !important;
+      border: 1px solid rgba(167, 243, 208, 0.65) !important;
+      box-shadow:
+        0 10px 26px -6px rgba(16, 185, 129, 0.45),
+        inset 0 2px 3px rgba(255, 255, 255, 0.50) !important;
+      color: #ffffff !important;
+    }
+
+    /* ================= REALISTIC SUN / MOON LIQUID GLASS SWITCH (LOCKED) ================= */
+    .theme-switch-track {
+      position: relative;
+      width: 92px;
+      height: 44px;
+      border-radius: 9999px;
+      cursor: pointer;
+      padding: 3px;
+      transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html.dark .theme-switch-track {
+      background: linear-gradient(90deg, rgba(203, 213, 225, 0.16) 0%, rgba(30, 64, 175, 0.42) 100%);
+      border: 1px solid rgba(147, 197, 253, 0.38);
+      box-shadow:
+        inset 0 2px 6px rgba(0, 0, 0, 0.45),
+        0 6px 20px -4px rgba(37, 99, 235, 0.45);
+    }
+
+    html:not(.dark) .theme-switch-track {
+      background: linear-gradient(90deg, rgba(250, 204, 21, 0.42) 0%, rgba(203, 213, 225, 0.65) 100%);
+      border: 1px solid rgba(15, 23, 42, 0.15);
+      box-shadow:
+        inset 0 2px 5px rgba(0, 0, 0, 0.10),
+        0 6px 20px -4px rgba(234, 179, 8, 0.38);
+    }
+
+    .theme-switch-thumb {
+      position: relative;
+      width: 50px;
+      height: 36px;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.48s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  background 0.45s ease,
+                  box-shadow 0.45s ease,
+                  border-color 0.45s ease;
+      overflow: hidden;
+    }
+
+    html.dark .theme-switch-thumb {
+      transform: translateX(34px);
+      background: radial-gradient(circle at 35% 25%, #3b82f6 0%, #1d4ed8 55%, #1e3a8a 100%);
+      border: 1.5px solid rgba(191, 219, 254, 0.78);
+      box-shadow:
+        0 0 18px rgba(59, 130, 246, 0.8),
+        inset 0 2px 4px rgba(255, 255, 255, 0.75),
+        inset 0 -2px 4px rgba(15, 23, 42, 0.55);
+    }
+
+    html:not(.dark) .theme-switch-thumb {
+      transform: translateX(0px);
+      background: radial-gradient(circle at 40% 25%, #fde047 0%, #eab308 60%, #ca8a04 100%);
+      border: 1.5px solid rgba(254, 249, 195, 0.95);
+      box-shadow:
+        0 0 18px rgba(250, 204, 21, 0.85),
+        inset 0 2px 4px rgba(255, 255, 255, 0.92),
+        inset 0 -2px 4px rgba(161, 98, 7, 0.4);
+    }
+
+    .theme-switch-thumb::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 12%;
+      right: 12%;
+      height: 11px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+      pointer-events: none;
+    }
+
+    .sun-svg, .moon-svg {
+      position: absolute;
+      transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.35s ease;
+    }
+
+    html.dark .sun-svg {
+      opacity: 0;
+      transform: scale(0.3) rotate(-90deg);
+    }
+    html.dark .moon-svg {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+    html:not(.dark) .sun-svg {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+    html:not(.dark) .moon-svg {
+      opacity: 0;
+      transform: scale(0.3) rotate(90deg);
+    }
+
+    /* Certificate Eye Button — High-Contrast Dark Glass */
+    .cert-eye-glass {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.90) 0%, rgba(30, 41, 59, 0.85) 100%) !important;
+      border: 1.5px solid rgba(255, 255, 255, 0.6) !important;
+      color: #ffffff !important;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.4) !important;
+    }
+    .cert-eye-glass:hover {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.95) 0%, rgba(5, 150, 105, 0.90) 100%) !important;
+      transform: scale(1.1);
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.15);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(100, 116, 139, 0.45);
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased selection:bg-emerald-600 selection:text-white min-h-screen relative overflow-x-hidden transition-colors duration-500">
+
+  <!-- ================= INTERACTIVE STARFIELD & TECH BACKGROUND CANVAS ================= -->
+  <canvas id="tech-bg-canvas" class="fixed inset-0 w-full h-full pointer-events-none z-0"></canvas>
+
+  <!-- ================= FLOATING LIQUID GLASS NAVBAR (WIDE-SCREEN FILLED) ================= -->
+  <header class="sticky top-3 z-50 w-[94%] max-w-[1480px] mx-auto">
+    <div class="liquid-glass rounded-2xl px-4 sm:px-7 h-16 flex items-center justify-between">
+      
+      <!-- Brand Identity -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl liquid-btn flex items-center justify-center font-extrabold text-xs tracking-tight text-emerald-600 dark:text-emerald-400">
+          ESR
+        </div>
+        <div>
+          <span class="font-bold text-sm sm:text-base tracking-tight block leading-none text-slate-900 dark:text-white">Elavarasan S R</span>
+          <span class="font-mono text-[11px] text-slate-600 dark:text-slate-400">Pharm.D Candidate</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Pills -->
+      <nav class="hidden xl:flex items-center gap-1.5 p-1 rounded-full bg-slate-200/70 dark:bg-slate-900/60 border border-slate-300/80 dark:border-white/10 backdrop-blur-md text-xs font-semibold text-slate-800 dark:text-slate-200">
+        <a href="#about" class="px-3.5 py-1.5 rounded-full hover:bg-white dark:hover:bg-white/10 transition">About</a>
+        <a href="#skills" class="px-3.5 py-1.5 rounded-full hover:bg-white dark:hover:bg-white/10 transition">Skills</a>
+        <a href="#projects" class="px-3.5 py-1.5 rounded-full hover:bg-white dark:hover:bg-white/10 transition">Research & Studies</a>
+        <a href="#experience" class="px-3.5 py-1.5 rounded-full hover:bg-white dark:hover:bg-white/10 transition">Clinical Experience</a>
+        <a href="#certificates" class="px-3.5 py-1.5 rounded-full hover:bg-white dark:hover:bg-white/10 transition">Certificates (7)</a>
+        <a href="#education" class="px-3.5 py-1.5 rounded-full hover:bg-white dark:hover:bg-white/10 transition">Education</a>
+        <a href="#contact" class="px-3.5 py-1.5 rounded-full hover:bg-white dark:hover:bg-white/10 transition">Connect</a>
+      </nav>
+
+      <!-- Right Controls: Locked Sun/Moon Switch + Resume + CV + Mobile Menu -->
+      <div class="flex items-center gap-2 sm:gap-2.5">
+        
+        <!-- Realistic Liquid Glass Sun/Moon Toggle Switch (Locked) -->
+        <button id="theme-toggle" type="button" aria-label="Toggle Light and Dark Mode" class="theme-switch-track" title="Switch Theme">
+          <div class="theme-switch-thumb">
+            <!-- Filled Radiant Sun (Light Mode) -->
+            <svg class="sun-svg w-5 h-5 text-white drop-shadow" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="5" fill="currentColor" />
+              <g stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <line x1="12" y1="2" x2="12" y2="4.2" />
+                <line x1="12" y1="19.8" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="4.2" y2="12" />
+                <line x1="19.8" y1="12" x2="22" y2="12" />
+                <line x1="4.93" y1="4.93" x2="6.5" y2="6.5" />
+                <line x1="17.5" y1="17.5" x2="19.07" y2="19.07" />
+                <line x1="19.07" y1="4.93" x2="17.5" y2="6.5" />
+                <line x1="6.5" y1="17.5" x2="4.93" y2="19.07" />
+              </g>
+            </svg>
+
+            <!-- Filled Crescent Moon + 2 Stars (Dark Mode) -->
+            <svg class="moon-svg w-5 h-5 text-white drop-shadow" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14.5 3.2C9.8 3.7 6.2 7.7 6.2 12.5C6.2 17.6 10.4 21.8 15.5 21.8C17.9 21.8 20.1 20.9 21.7 19.3C17.4 19.6 13.7 16.3 13.7 12C13.7 8.4 15.9 5.3 19.1 4.1C17.7 3.5 16.1 3.1 14.5 3.2Z" />
+              <path d="M19.5 8.2L20.1 9.7L21.6 10.3L20.1 10.9L19.5 12.4L18.9 10.9L17.4 10.3L18.9 9.7L19.5 8.2Z" />
+              <path d="M16.2 6.0L16.5 6.8L17.3 7.1L16.5 7.4L16.2 8.2L15.9 7.4L15.1 7.1L15.9 6.8L16.2 6.0Z" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Navbar Download Resume Button -->
+        <a href="./resume.pdf" download="Elavarasan_SR_Resume.pdf" target="_blank" class="resume-download-link hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold liquid-btn liquid-btn-primary" title="Download Resume">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Navbar Download CV Button -->
+        <a href="./cv.pdf" download="Elavarasan_SR_CV.pdf" target="_blank" class="cv-download-link hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold liquid-btn" title="Download Detailed CV">
+          <i data-lucide="file-text" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400"></i>
+          <span>CV</span>
+        </a>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-menu-btn" aria-label="Open Menu" class="xl:hidden p-2.5 rounded-xl liquid-btn">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Glass Drawer -->
+    <div id="mobile-menu" class="hidden xl:hidden mt-2 liquid-glass rounded-2xl p-4 space-y-2 text-sm font-semibold">
+      <a href="#about" class="mobile-link block px-3 py-2 rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10">About Me</a>
+      <a href="#skills" class="mobile-link block px-3 py-2 rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10">Skills & Competencies</a>
+      <a href="#projects" class="mobile-link block px-3 py-2 rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10">Research & Clinical Studies</a>
+      <a href="#experience" class="mobile-link block px-3 py-2 rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10">Clinical Experience</a>
+      <a href="#certificates" class="mobile-link block px-3 py-2 rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10">Certificates (7)</a>
+      <a href="#education" class="mobile-link block px-3 py-2 rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10">Education</a>
+      <a href="#contact" class="mobile-link block px-3 py-2 rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10">Connect</a>
+      <div class="grid grid-cols-2 gap-2.5 pt-2">
+        <a href="./resume.pdf" download="Elavarasan_SR_Resume.pdf" target="_blank" class="resume-download-link flex items-center justify-center gap-2 w-full py-2.5 rounded-xl liquid-btn liquid-btn-primary text-xs font-bold">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>Download Resume</span>
+        </a>
+        <a href="./cv.pdf" download="Elavarasan_SR_CV.pdf" target="_blank" class="cv-download-link flex items-center justify-center gap-2 w-full py-2.5 rounded-xl liquid-btn text-xs font-bold">
+          <i data-lucide="file-text" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT (WIDE-SCREEN RESPONSIVE CONTAINER) ================= -->
+  <main id="home" class="relative z-10 w-[94%] max-w-[1480px] mx-auto pt-8 pb-24 space-y-24">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="pt-4 lg:pt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      
+      <!-- Left Column: Intro & Liquid Glass Buttons -->
+      <div class="lg:col-span-7 xl:col-span-8 space-y-6 text-center lg:text-left">
+        
+        <!-- Top Status Pill -->
+        <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 px-4 py-1.5 rounded-full liquid-glass text-xs font-semibold text-slate-800 dark:text-slate-200">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+          <span>🎓 Doctor of Pharmacy (Pharm.D) Candidate @ TN Dr. M.G.R. Medical University</span>
+          <span class="opacity-40">|</span>
+          <span class="text-emerald-700 dark:text-emerald-400 font-bold">⚕️ Clinical Research & Pharmacovigilance</span>
+        </div>
+
+        <!-- Professional Executive Headline -->
+        <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.12] text-slate-900 dark:text-white">
+          Doctor of Pharmacy Candidate <br class="hidden sm:inline" />
+          <span class="bg-gradient-to-r from-emerald-600 via-teal-600 to-sky-600 dark:from-emerald-400 dark:via-teal-300 dark:to-sky-400 bg-clip-text text-transparent">
+            Driven by Patient Safety & Clinical Research.
+          </span>
+        </h1>
+
+        <!-- Authentic Factual Summary -->
+        <p class="text-base sm:text-lg text-slate-700 dark:text-slate-300 max-w-3xl mx-auto lg:mx-0 leading-relaxed font-normal">
+          Dedicated <strong class="text-slate-900 dark:text-white font-semibold">Pharm.D candidate</strong> with clinical clerkship expertise in hospital pharmacy, pharmacovigilance, and patient safety at <strong class="text-slate-900 dark:text-white font-semibold">Government Erode Medical College and Hospital (GEMCH)</strong>. Proven background in adverse drug reaction (ADR) reporting, prescription audits, and epidemiological data interpretation. Certified in <strong class="text-slate-900 dark:text-white font-semibold">GCP (ICH E6)</strong> and <strong class="text-slate-900 dark:text-white font-semibold">Indian Clinical Trial Regulations (NPTEL – IIT Madras)</strong>, seeking impactful roles in Clinical Research, Pharmacovigilance, and Clinical Data Management.
+        </p>
+
+        <!-- Interactive Liquid Glass Action Buttons (Dual Resume & CV Options) -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+          <a href="#experience" class="liquid-btn liquid-btn-primary px-6 py-3.5 rounded-full font-bold text-sm inline-flex items-center gap-2.5">
+            <span>Clinical Experience</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+
+          <!-- Hero Download Resume Button -->
+          <a href="./resume.pdf" download="Elavarasan_SR_Resume.pdf" target="_blank" class="resume-download-link liquid-btn px-5 py-3.5 rounded-full font-bold text-sm inline-flex items-center gap-2" title="Download 1-Page Executive Resume">
+            <i data-lucide="file-down" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+            <span>Download Resume</span>
+          </a>
+
+          <!-- Hero Download CV Button -->
+          <a href="./cv.pdf" download="Elavarasan_SR_CV.pdf" target="_blank" class="cv-download-link liquid-btn px-5 py-3.5 rounded-full font-bold text-sm inline-flex items-center gap-2" title="Download Detailed Academic & Clinical CV">
+            <i data-lucide="file-text" class="w-4 h-4 text-sky-600 dark:text-sky-400"></i>
+            <span>Download CV</span>
+          </a>
+
+          <!-- LinkedIn Button -->
+          <a href="https://www.linkedin.com/in/elavarasan-s-r-101078265" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="liquid-btn w-12 h-12 rounded-full inline-flex items-center justify-center text-[#0A66C2] dark:text-sky-400" title="LinkedIn Profile">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+            </svg>
+          </a>
+
+          <!-- Email Button -->
+          <a href="mailto:eelavarasan960@gmail.com" aria-label="Email Me" class="liquid-btn w-12 h-12 rounded-full inline-flex items-center justify-center text-emerald-600 dark:text-emerald-400" title="Email Me">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
+
+          <!-- Phone Button -->
+          <a href="tel:+916369256583" aria-label="Call Me" class="liquid-btn w-12 h-12 rounded-full inline-flex items-center justify-center text-amber-600 dark:text-amber-400" title="Call +91-6369256583">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+          </a>
+        </div>
+
+        <!-- Quick Highlights Bento Strip -->
+        <div class="pt-4 grid grid-cols-3 gap-3 sm:gap-5 max-w-3xl">
+          <div class="liquid-glass rounded-2xl p-4 sm:p-5 text-left">
+            <p class="text-xl sm:text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">500+</p>
+            <p class="text-[11px] sm:text-xs text-slate-700 dark:text-slate-300 font-medium mt-1">Prescriptions Audited & 50+ ADRs Documented</p>
+          </div>
+          <div class="liquid-glass rounded-2xl p-4 sm:p-5 text-left">
+            <p class="text-xl sm:text-3xl font-extrabold text-sky-600 dark:text-sky-400">200+</p>
+            <p class="text-[11px] sm:text-xs text-slate-700 dark:text-slate-300 font-medium mt-1">Clinical Patient Records Analyzed (HbA1c)</p>
+          </div>
+          <div class="liquid-glass rounded-2xl p-4 sm:p-5 text-left">
+            <p class="text-xl sm:text-3xl font-extrabold text-amber-600 dark:text-amber-400">3.8 / 4.0</p>
+            <p class="text-[11px] sm:text-xs text-slate-700 dark:text-slate-300 font-medium mt-1">Cumulative GPA & 2nd Place Int'l Award</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Liquid Glass Profile Showcase -->
+      <div class="lg:col-span-5 xl:col-span-4">
+        <div class="liquid-glass rounded-3xl p-5 sm:p-6 max-w-md mx-auto lg:max-w-none space-y-5">
+          
+          <!-- Profile Photo Frame -->
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/4.2] bg-slate-900 border border-slate-300/60 dark:border-white/15">
+            <img
+              id="hero-portrait"
+              src="./profile.png"
+              onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1';this.src='./profile.jpg';}else if(!this.dataset.triedLocal){this.dataset.triedLocal='1';this.src='file:///P:/GitHUB/Clients/Elavarasan/profile.png';}else{this.onerror=null;this.src='https://ui-avatars.com/api/?name=Elavarasan+S+R&background=0f172a&color=10b981&size=512&font-size=0.33&bold=true';}"
+              alt="Elavarasan S R"
+              class="w-full h-full object-cover object-top"
+            />
+            <div class="absolute bottom-3 left-3 right-3 rounded-xl px-3.5 py-2.5 bg-slate-900/85 backdrop-blur-md border border-white/20 text-white flex items-center justify-between text-xs">
+              <span class="flex items-center gap-1.5 font-semibold">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-emerald-400"></i>
+                Erode, Tamil Nadu, India
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/25 text-emerald-300 font-mono text-[10px] font-semibold">
+                Pharm.D '28
+              </span>
+            </div>
+          </div>
+
+          <!-- Clinical Focus Card -->
+          <div class="rounded-2xl p-4 bg-slate-100/90 dark:bg-slate-900/60 border border-slate-200/90 dark:border-white/10 space-y-1.5">
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span class="text-emerald-700 dark:text-emerald-400 font-bold uppercase">Core Focus</span>
+              <span class="text-slate-600 dark:text-slate-400 font-semibold">Clinical Research × PV</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+              Committed to advancing evidence-based pharmacotherapy, rigorous adverse drug reaction (ADR) surveillance, and regulatory-compliant clinical research.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= ABOUT ME SECTION ================= -->
+    <section id="about" class="scroll-mt-24 space-y-6">
+      <div>
+        <p class="text-xs font-mono uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-bold">01 / About Me</p>
+        <h2 class="text-2xl sm:text-3xl font-extrabold mt-1 text-slate-900 dark:text-white">Dedicated Clinician. Evidence-Based Researcher.</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 liquid-glass rounded-3xl p-6 sm:p-8 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 text-xs font-bold">
+            <i data-lucide="stethoscope" class="w-3.5 h-3.5"></i>
+            <span>My Journey in Clinical Pharmacy & Drug Safety</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Bridging Bedside Pharmacotherapy with Clinical Research & Pharmacovigilance</h3>
+          <p class="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+            Pursuing my integrated <strong class="text-slate-900 dark:text-white">Doctor of Pharmacy (Pharm.D)</strong> degree under <strong class="text-slate-900 dark:text-white">The Tamil Nadu Dr. M.G.R. Medical University</strong> (CGPA: 3.8/4.0), I have built a strong clinical foundation across hospital pharmacy, therapeutics, pharmacovigilance, and public health epidemiology. Through my ongoing 5th-year clinical clerkship at <strong class="text-slate-900 dark:text-white">Government Erode Medical College and Hospital (GEMCH)</strong>, I actively apply rational pharmacotherapy principles across medical and surgical specialties.
+          </p>
+          <p class="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+            Across my hospital and clinical training, I have audited <strong class="text-slate-900 dark:text-white">500+ inpatient and outpatient prescriptions</strong> to reduce medication error risk by 12%, documented <strong class="text-slate-900 dark:text-white">50+ Adverse Drug Reactions (ADRs)</strong>, and analyzed <strong class="text-slate-900 dark:text-white">200+ diabetic patient records (HbA1c trends)</strong> to optimize insulin protocols and improve adherence by 15%.
+          </p>
+        </div>
+
+        <div class="lg:col-span-4 liquid-glass rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-2xl liquid-btn flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">How I Add Value</h3>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5"></i>
+                <span><strong class="text-slate-900 dark:text-white">Pharmacovigilance & Safety:</strong> Hands-on training in ICSR handling, ADR documentation, drug interaction screening, and safety signal detection.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5"></i>
+                <span><strong class="text-slate-900 dark:text-white">Regulatory & GCP Certified:</strong> Certified in ICH E6 Good Clinical Practice (NIDA/NIH USA) and Indian Clinical Trial Regulations for IND v3.0 (NPTEL – IIT Madras).</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5"></i>
+                <span><strong class="text-slate-900 dark:text-white">Scientific Communication:</strong> Published co-author in IJIRT (Impact Factor: 8.412) and 2nd Place Winner at the 2nd ECPCON International Conference.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS & CLINICAL COMPETENCIES ================= -->
+    <section id="skills" class="scroll-mt-24 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-bold">02 / Core Competencies</p>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mt-1 text-slate-900 dark:text-white">Technical & Clinical Skills</h2>
+        </div>
+        <p class="text-xs font-medium text-slate-600 dark:text-slate-400">Specialized competencies across clinical trials, drug safety, and patient care</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Card 1: Clinical Research & Regulatory -->
+        <div class="liquid-glass rounded-3xl p-6 space-y-4">
+          <div class="w-11 h-11 rounded-2xl liquid-btn flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+            <i data-lucide="file-check-2" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base text-slate-900 dark:text-white">Clinical Research & GCP</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">Regulatory & Trial Operations</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">GCP (ICH E6)</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Indian CT Regulatory Framework</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Protocol Understanding</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Informed Consent</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Data Integrity</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Pharmacovigilance & Drug Safety -->
+        <div class="liquid-glass rounded-3xl p-6 space-y-4">
+          <div class="w-11 h-11 rounded-2xl liquid-btn flex items-center justify-center text-sky-600 dark:text-sky-400">
+            <i data-lucide="activity" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base text-slate-900 dark:text-white">Pharmacovigilance (PV)</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">Adverse Event & Signal Monitoring</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">ICSR Handling</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">ADR Reporting & Documentation</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Safety Signal Detection</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Safety Reporting Compliance</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">PV Database Basics</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Hospital & Clinical Pharmacy Practice -->
+        <div class="liquid-glass rounded-3xl p-6 space-y-4">
+          <div class="w-11 h-11 rounded-2xl liquid-btn flex items-center justify-center text-amber-600 dark:text-amber-400">
+            <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base text-slate-900 dark:text-white">Pharmacy Practice</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">Inpatient & Outpatient Care</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Prescription Audit</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Drug Interaction Screening</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Medication Reconciliation</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Therapeutic Drug Monitoring (TDM)</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Patient Counseling</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Rational Drug Therapy</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Epidemiology, Data & Tools -->
+        <div class="liquid-glass rounded-3xl p-6 space-y-4">
+          <div class="w-11 h-11 rounded-2xl liquid-btn flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+            <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base text-slate-900 dark:text-white">Data, Epidemiology & Tools</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">Surveillance & Clinical Documentation</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Clinical Data Entry</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Biostatistics Basics</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Epidemiological Interpretation</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">Chronic Disease Surveillance</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">EHR Familiarity</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold liquid-btn">MS Office Suite</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= RESEARCH, PUBLICATIONS & CLINICAL STUDIES ================= -->
+    <section id="projects" class="scroll-mt-24 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-bold">03 / Scientific Output</p>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mt-1 text-slate-900 dark:text-white">Publications, Research & Case Presentations</h2>
+        </div>
+        <p class="text-xs font-medium text-slate-600 dark:text-slate-400">Peer-reviewed research, international conference awards, and clinical case reports</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- 1. IJIRT Journal Publication -->
+        <div class="liquid-glass rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <div class="w-12 h-12 rounded-2xl liquid-btn flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+                <i data-lucide="book-open-check" class="w-6 h-6"></i>
+              </div>
+              <span class="px-3.5 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30">
+                ● Published • Jul 2026 (IF: 8.412)
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Comparative Evaluation of Topical Pentoxifylline Cream & ZnO Nanoparticle-Loaded Cream</h3>
+              <p class="text-xs font-mono text-slate-600 dark:text-slate-400 mt-0.5">International Journal of Innovative Research in Technology (IJIRT) • Vol. 13, Issue 2</p>
+            </div>
+            <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+              Co-authored and published a peer-reviewed research paper titled <strong class="text-slate-900 dark:text-white">"Comparative Evaluation of Topical Pentoxifylline Cream and Zinc Oxide Nanoparticle-Loaded Pentoxifylline Cream for the Management of Intermittent Claudication"</strong> (ISSN: 2349-6002, Registration ID: 206387).
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-white/10 flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">Nanoparticle Formulation</span>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">Intermittent Claudication</span>
+            </div>
+            <a href="https://ijirt.org/article?manuscript=206387" target="_blank" rel="noopener" class="text-xs font-bold text-emerald-700 dark:text-emerald-400 inline-flex items-center gap-1 hover:underline">
+              <span>View Paper (ID: 206387)</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. 2nd Place Oral E-Poster Presentation -->
+        <div class="liquid-glass rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <div class="w-12 h-12 rounded-2xl liquid-btn flex items-center justify-center text-amber-600 dark:text-amber-400">
+                <i data-lucide="award" class="w-6 h-6"></i>
+              </div>
+              <span class="px-3.5 py-1 rounded-full text-xs font-mono font-bold bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/35">
+                🏆 2nd Place Winner • Int'l Conference
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Tackling Antimicrobial Resistance with Artificial Intelligence</h3>
+              <p class="text-xs font-mono text-slate-600 dark:text-slate-400 mt-0.5">2nd ECPCON International Conference (PharmaNext Global 2025)</p>
+            </div>
+            <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+              Secured <strong class="text-slate-900 dark:text-white">Second Place in the Oral E-Poster Presentation</strong> at The Erode College of Pharmacy (The TN Dr. M.G.R. Medical University) for research on AI applications in combating Antimicrobial Resistance (AMR). Awarded a Certificate of Appreciation and earned <strong class="text-slate-900 dark:text-white">30 CEP Credit Points (Category I)</strong>.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-white/10 flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">Antimicrobial Resistance (AMR)</span>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">AI in Healthcare</span>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">30 CEP Credit Points</span>
+          </div>
+        </div>
+
+        <!-- 3. Clinical Case Report Presentation -->
+        <div class="liquid-glass rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <div class="w-12 h-12 rounded-2xl liquid-btn flex items-center justify-center text-sky-600 dark:text-sky-400">
+                <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+              </div>
+              <span class="px-3.5 py-1 rounded-full text-xs font-mono font-bold bg-sky-500/15 text-sky-700 dark:text-sky-300 border border-sky-500/30">
+                🩺 Clinical Case Presentation
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Invasive Fungal Sinusitis Presenting as Diabetic Ketoacidosis (DKA)</h3>
+              <p class="text-xs font-mono text-slate-600 dark:text-slate-400 mt-0.5">Ramachandra College of Pharmacy</p>
+            </div>
+            <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+              Presented an in-depth clinical case report analyzing the diagnostic challenges, pathophysiology, antifungal pharmacotherapy, and metabolic stabilization of <strong class="text-slate-900 dark:text-white">Invasive Fungal Sinusitis presenting as DKA</strong>.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-white/10 flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">Clinical Case Report</span>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">Diabetic Ketoacidosis (DKA)</span>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">Infectious Disease Pharmacotherapy</span>
+          </div>
+        </div>
+
+        <!-- 4. National Seminar & Epidemiological Outcome Study -->
+        <div class="liquid-glass rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <div class="w-12 h-12 rounded-2xl liquid-btn flex items-center justify-center text-teal-600 dark:text-teal-400">
+                <i data-lucide="microscope" class="w-6 h-6"></i>
+              </div>
+              <span class="px-3.5 py-1 rounded-full text-xs font-mono font-bold bg-teal-500/15 text-teal-700 dark:text-teal-300 border border-teal-500/30">
+                📊 Seminar & Clinical Audits • Sep 2025
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Real-Time Innovations in Pharmacy & Patient Safety Surveillance</h3>
+              <p class="text-xs font-mono text-slate-600 dark:text-slate-400 mt-0.5">Shanmuga College of Pharmacy, Sankari & Hospital Clinical Audits</p>
+            </div>
+            <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+              Participated in the National Seminar on <strong class="text-slate-900 dark:text-white">"Real-Time Innovations in Pharmacy: Enhancing Patient Care with Current Trends"</strong> (Sep 2025), complementing real-world clinical audits across <strong class="text-slate-900 dark:text-white">700+ combined patient and prescription records</strong>.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200 dark:border-white/10 flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">Patient Safety Innovations</span>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">Evidence-Based Medicine</span>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-mono liquid-btn">Pharmacoepidemiology</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CLINICAL EXPERIENCE & INTERNSHIPS SECTION ================= -->
+    <section id="experience" class="scroll-mt-24 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-bold">04 / Clinical Training</p>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mt-1 text-slate-900 dark:text-white">Clinical Experience & Internships</h2>
+        </div>
+        <span class="text-xs font-mono font-semibold text-slate-600 dark:text-slate-400">Hospital Pharmacy • Diabetes Care • Medical Writing • PV</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Role 1: GEMCH Clinical Clerkship -->
+        <div class="liquid-glass rounded-3xl p-6 sm:p-7 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30">
+              February 2026 – Present
+            </span>
+            <span class="text-xs font-mono font-medium text-slate-600 dark:text-slate-400">GEMCH, Erode</span>
+          </div>
+          <div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">Clinical Clerkship (5th Year Pharm.D)</h3>
+            <p class="text-xs sm:text-sm font-semibold text-emerald-700 dark:text-emerald-400 mt-0.5">
+              Government Erode Medical College and Hospital (GEMCH)
+            </p>
+          </div>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5"></i>
+              <span><strong class="text-slate-900 dark:text-white">Multidisciplinary Ward Rounds:</strong> Undergoing hospital-based clinical clerkship across medical and surgical specialties, applying pharmacotherapy knowledge in real-world patient care.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5"></i>
+              <span><strong class="text-slate-900 dark:text-white">Therapeutic Optimization:</strong> Reviewing inpatient treatment charts for rational drug selection, dosage adjustments, and adverse event monitoring.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role 2: Pill Advise / CliMed Research Solutions -->
+        <div class="liquid-glass rounded-3xl p-6 sm:p-7 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-sky-500/15 text-sky-700 dark:text-sky-300 border border-sky-500/30">
+              April 2026 – June 2026
+            </span>
+            <span class="text-xs font-mono font-medium text-slate-600 dark:text-slate-400">Intern ID: PA4CM050</span>
+          </div>
+          <div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">Healthcare Content Intern</h3>
+            <p class="text-xs sm:text-sm font-semibold text-sky-700 dark:text-sky-400 mt-0.5">
+              Pill Advise (A Constituent Unit of CliMed Research Solutions, India)
+            </p>
+          </div>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-sky-600 dark:text-sky-400 shrink-0 mt-0.5"></i>
+              <span><strong class="text-slate-900 dark:text-white">Evidence-Based Medical Writing:</strong> Developed accurate medical and healthcare content through scientific literature review, fact-checking, referencing, and quality proofreading.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-sky-600 dark:text-sky-400 shrink-0 mt-0.5"></i>
+              <span><strong class="text-slate-900 dark:text-white">Clinical Data Translation:</strong> Translated complex clinical and pharmaceutical data into clear, reader-friendly educational resources for healthcare professionals and the public.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role 3: Erode Medical Centre (Monika Diabetes Clinic) -->
+        <div class="liquid-glass rounded-3xl p-6 sm:p-7 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/30">
+              May 2025 – June 2025
+            </span>
+            <span class="text-xs font-mono font-medium text-slate-600 dark:text-slate-400">Erode, Tamil Nadu</span>
+          </div>
+          <div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">Clinical & Public Health Intern</h3>
+            <p class="text-xs sm:text-sm font-semibold text-amber-700 dark:text-amber-400 mt-0.5">
+              Erode Medical Centre (Monika Diabetes Clinic)
+            </p>
+          </div>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5"></i>
+              <span><strong class="text-slate-900 dark:text-white">Protocol Optimization & Cohort Analysis:</strong> Optimized insulin management protocols (improving adherence by 15%) and analyzed clinical datasets of <strong class="text-slate-900 dark:text-white">200+ patient records (HbA1c trends)</strong>.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5"></i>
+              <span><strong class="text-slate-900 dark:text-white">Epidemiological Surveillance:</strong> Applied epidemiological methods to identify glycemic control patterns, complication risk factors, and non-adherence clusters across patient cohorts.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role 4: Lotus Multispecialty Hospital -->
+        <div class="liquid-glass rounded-3xl p-6 sm:p-7 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-teal-500/15 text-teal-800 dark:text-teal-300 border border-teal-500/30">
+              August 2023 – September 2023
+            </span>
+            <span class="text-xs font-mono font-medium text-slate-600 dark:text-slate-400">Erode, Tamil Nadu</span>
+          </div>
+          <div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">Clinical Pharmacist Trainee</h3>
+            <p class="text-xs sm:text-sm font-semibold text-teal-700 dark:text-teal-400 mt-0.5">
+              Lotus Multispecialty Hospital, Erode
+            </p>
+          </div>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-teal-600 dark:text-teal-400 shrink-0 mt-0.5"></i>
+              <span><strong class="text-slate-900 dark:text-white">500+ Prescription Audits:</strong> Evaluated drug appropriateness, dosage accuracy, contraindications, and STG compliance, reducing medication error risk by 12%.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-teal-600 dark:text-teal-400 shrink-0 mt-0.5"></i>
+              <span><strong class="text-slate-900 dark:text-white">50+ ADRs & Patient Counseling:</strong> Screened for drug-drug interactions, documented 50+ ADRs per hospital PV protocols, and counseled patients on adherence and TDM.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= VERIFIED CERTIFICATIONS & CREDENTIALS (7 PNG ITEMS) ================= -->
+    <section id="certificates" class="scroll-mt-24 space-y-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-bold">05 / Verified Credentials</p>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mt-1 text-slate-900 dark:text-white">Certifications, Publications & Training</h2>
+        </div>
+
+        <!-- Interactive Category Filter Pills -->
+        <div class="flex flex-wrap gap-2" id="cert-filter-bar">
+          <button data-filter="all" class="cert-filter-btn liquid-btn liquid-btn-primary px-4 py-2 rounded-full text-xs font-bold">All (7)</button>
+          <button data-filter="regulatory" class="cert-filter-btn liquid-btn px-4 py-2 rounded-full text-xs font-bold">🏛️ Clinical Trials & NPTEL (3)</button>
+          <button data-filter="pv" class="cert-filter-btn liquid-btn px-4 py-2 rounded-full text-xs font-bold">🛡️ Pharmacovigilance (2)</button>
+          <button data-filter="research" class="cert-filter-btn liquid-btn px-4 py-2 rounded-full text-xs font-bold">📄 Publication & Internship (2)</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Certificate Grid -->
+      <div id="certificates-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+    </section>
+
+    <!-- ================= EDUCATION SECTION ================= -->
+    <section id="education" class="scroll-mt-24 space-y-6">
+      <div>
+        <p class="text-xs font-mono uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-bold">06 / Academic Degree</p>
+        <h2 class="text-2xl sm:text-3xl font-extrabold mt-1 text-slate-900 dark:text-white">Education</h2>
+      </div>
+
+      <div class="liquid-glass rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div class="flex items-start gap-4">
+          <div class="w-14 h-14 rounded-2xl liquid-btn flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
+            <i data-lucide="graduation-cap" class="w-7 h-7"></i>
+          </div>
+          <div class="space-y-2">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-block px-3 py-0.5 rounded-full text-xs font-mono font-bold bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30">
+                2021 – June 2028 (Expected)
+              </span>
+              <span class="inline-block px-3 py-0.5 rounded-full text-xs font-mono font-bold bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/30">
+                Cumulative GPA: 3.8 / 4.0
+              </span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">Doctor of Pharmacy (Pharm.D)</h3>
+            <p class="text-sm sm:text-base font-semibold text-slate-800 dark:text-slate-200">
+              The Tamil Nadu Dr. M.G.R. Medical University, Tamil Nadu
+            </p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              6-year integrated clinical pharmacy programme covering Clinical Pharmacology, Therapeutics, Pharmacovigilance, Hospital Pharmacy Practice, Biopharmaceutics, Drug Information Services, Clinical Toxicology, Pharmacokinetics, Evidence-Based Medicine, Biostatistics, and Rational Drug Therapy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LET'S CONNECT SECTION (CLEAN NO-FORM LAYOUT) ================= -->
+    <section id="contact" class="scroll-mt-24">
+      <div class="liquid-glass rounded-3xl p-6 sm:p-10 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Contact Details -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <p class="text-xs font-mono uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-bold">07 / Let's Connect</p>
+            <h2 class="text-2xl sm:text-3xl font-extrabold mt-1 text-slate-900 dark:text-white">Get In Touch</h2>
+          </div>
+          <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            Actively seeking opportunities in <strong class="text-slate-900 dark:text-white">Clinical Research, Pharmacovigilance, Clinical Data Management, and Public Health Research</strong>. Feel free to reach out via email, phone, or LinkedIn.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <!-- Email -->
+            <a href="mailto:eelavarasan960@gmail.com" class="liquid-btn rounded-2xl p-4 flex items-center gap-3.5 w-full text-left">
+              <div class="w-11 h-11 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div class="overflow-hidden">
+                <p class="text-xs font-mono text-slate-500 dark:text-slate-400">Email</p>
+                <p class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate">eelavarasan960@gmail.com</p>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+916369256583" class="liquid-btn rounded-2xl p-4 flex items-center gap-3.5 w-full text-left">
+              <div class="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div class="overflow-hidden">
+                <p class="text-xs font-mono text-slate-500 dark:text-slate-400">Phone</p>
+                <p class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate">+91-6369256583</p>
+              </div>
+            </a>
+
+            <!-- LinkedIn (Fixed with Inline Official SVG Logo) -->
+            <a href="https://www.linkedin.com/in/elavarasan-s-r-101078265" target="_blank" rel="noopener" class="liquid-btn rounded-2xl p-4 flex items-center gap-3.5 w-full text-left">
+              <div class="w-11 h-11 rounded-xl bg-sky-500/15 border border-sky-500/30 text-[#0A66C2] dark:text-sky-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                </svg>
+              </div>
+              <div class="overflow-hidden">
+                <p class="text-xs font-mono text-slate-500 dark:text-slate-400">LinkedIn</p>
+                <p class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate">Elavarasan S R</p>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="liquid-btn rounded-2xl p-4 flex items-center gap-3.5 w-full text-left">
+              <div class="w-11 h-11 rounded-xl bg-teal-500/15 border border-teal-500/30 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div class="overflow-hidden">
+                <p class="text-xs font-mono text-slate-500 dark:text-slate-400">Location</p>
+                <p class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate">Erode, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Areas of Interest & Career Focus Card -->
+        <div class="lg:col-span-6">
+          <div class="rounded-2xl p-6 sm:p-8 bg-slate-100/85 dark:bg-slate-900/60 border border-slate-200/90 dark:border-white/10 space-y-6">
+            <div class="flex items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-mono uppercase tracking-wider text-emerald-700 dark:text-emerald-400 font-bold">Career Focus</span>
+                <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-0.5">Areas of Interest & Availability</h3>
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30">
+                ● Open to Roles
+              </span>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold liquid-btn">Clinical Research (Phase I–IV Trials)</span>
+              <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold liquid-btn">Pharmacovigilance & Drug Safety</span>
+              <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold liquid-btn">Clinical Data Management</span>
+              <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold liquid-btn">Biostatistics & Epidemiology</span>
+              <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold liquid-btn">Public Health Research</span>
+              <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold liquid-btn">Evidence-Based Medicine</span>
+              <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold liquid-btn">Regulatory Affairs</span>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 dark:border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="text-xs text-slate-700 dark:text-slate-300 space-y-1">
+                <p><strong class="text-slate-900 dark:text-white">Languages:</strong> English (Professional Proficiency) • Tamil (Native)</p>
+                <p><strong class="text-slate-900 dark:text-white">Current Base:</strong> Erode, Tamil Nadu, India</p>
+              </div>
+              <div class="flex flex-wrap items-center gap-2 shrink-0">
+                <a href="./resume.pdf" download="Elavarasan_SR_Resume.pdf" target="_blank" class="resume-download-link liquid-btn liquid-btn-primary px-4 py-2.5 rounded-full font-bold text-xs inline-flex items-center gap-1.5">
+                  <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                  <span>Resume</span>
+                </a>
+                <a href="./cv.pdf" download="Elavarasan_SR_CV.pdf" target="_blank" class="cv-download-link liquid-btn px-4 py-2.5 rounded-full font-bold text-xs inline-flex items-center gap-1.5">
+                  <i data-lucide="file-text" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400"></i>
+                  <span>CV</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FULL-IMAGE CERTIFICATE LIGHTBOX MODAL ================= -->
+  <div id="cert-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-3 sm:p-6 bg-slate-950/85 backdrop-blur-xl">
+    <div class="liquid-glass rounded-3xl max-w-4xl w-full max-h-[92vh] flex flex-col overflow-hidden border border-white/25">
+      <!-- Modal Top Bar -->
+      <div class="px-5 py-4 border-b border-slate-200 dark:border-white/15 flex items-center justify-between gap-4">
+        <div>
+          <span id="modal-badge" class="px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold bg-emerald-500/20 text-emerald-600 dark:text-emerald-400"></span>
+          <h3 id="modal-title" class="text-base sm:text-lg font-extrabold mt-0.5 text-slate-900 dark:text-white"></h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <a id="modal-pdf-link" href="#" target="_blank" rel="noopener" class="hidden liquid-btn liquid-btn-primary px-3.5 py-2 rounded-full text-xs font-bold items-center gap-1.5">
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            <span>Open Full Image</span>
+          </a>
+          <button id="modal-close" aria-label="Close Preview" class="liquid-btn p-2.5 rounded-full">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Full Certificate Image / Fallback Canvas Viewport -->
+      <div class="p-4 sm:p-6 overflow-auto flex-1 flex items-center justify-center bg-slate-900/60">
+        <img id="modal-img" class="max-w-full max-h-[72vh] w-auto h-auto rounded-xl shadow-2xl border border-white/15 object-contain" alt="Certificate Full View" />
+        <canvas id="modal-canvas" class="hidden max-w-full h-auto rounded-xl shadow-2xl border border-white/15"></canvas>
+      </div>
+
+      <!-- Modal Footer Description -->
+      <div class="px-5 py-3.5 border-t border-slate-200 dark:border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-700 dark:text-slate-300">
+        <p id="modal-desc"></p>
+        <span id="modal-issuer" class="font-mono text-emerald-600 dark:text-emerald-400 font-semibold shrink-0"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER & SLEEK LIQUID GLASS DEVELOPER CREDIT STRIP ================= -->
+  <footer class="relative z-10 border-t border-slate-200 dark:border-white/10 pt-8 pb-10">
+    <div class="w-[94%] max-w-[1480px] mx-auto space-y-6">
+      
+      <!-- Client Copyright Row -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600 dark:text-slate-400 px-1">
+        <div>
+          <span class="font-bold text-slate-900 dark:text-white">Elavarasan S R</span>
+          <span> • Doctor of Pharmacy (Pharm.D) Candidate | The Tamil Nadu Dr. M.G.R. Medical University</span>
+        </div>
+        <div class="font-mono">
+          © 2026 Elavarasan S R • Clinical Research & Pharmacovigilance Portfolio
+        </div>
+      </div>
+
+      <!-- Sleek Real Liquid Glass Developer Credit Strip -->
+      <div class="liquid-glass rounded-2xl px-5 py-4 sm:px-7 sm:py-4 flex flex-col lg:flex-row items-center justify-between gap-4">
+        
+        <!-- Left Hook & Developer Attribution -->
+        <div class="flex items-center gap-3.5 text-center lg:text-left">
+          <div class="hidden sm:flex w-10 h-10 rounded-xl liquid-btn items-center justify-center font-extrabold text-xs tracking-tight text-emerald-600 dark:text-emerald-400 shrink-0">
+            PT
+          </div>
+          <div class="space-y-0.5">
+            <p class="text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-300">
+              Still sending a plain PDF while others share an interactive portfolio? <span class="font-bold text-emerald-700 dark:text-emerald-400">Upgrade how recruiters see your work.</span>
+            </p>
+            <p class="text-[11px] sm:text-xs font-mono text-slate-600 dark:text-slate-400">
+              Designed &amp; Developed by <strong class="text-slate-900 dark:text-white font-semibold">Parth S Talpada</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Compact Action Pills: Website + LinkedIn + Email -->
+        <div class="flex flex-wrap items-center justify-center gap-2.5 shrink-0">
+          
+          <!-- Website Pill (parthtech.dev) -->
+          <a href="https://parthtech.dev" target="_blank" rel="noopener" class="liquid-btn liquid-btn-primary px-4 py-2 rounded-full text-xs font-bold inline-flex items-center gap-1.5" title="Visit Developer Portfolio — parthtech.dev">
+            <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+            <span class="font-mono">parthtech.dev</span>
+          </a>
+
+          <!-- LinkedIn Pill (Logo + Short "LinkedIn" Text) -->
+          <a href="https://www.linkedin.com/in/parth-s-talpada" target="_blank" rel="noopener" class="liquid-btn px-3.5 py-2 rounded-full text-xs font-bold inline-flex items-center gap-1.5 text-slate-900 dark:text-white hover:text-[#0A66C2] dark:hover:text-sky-400" title="Connect with Parth S Talpada on LinkedIn">
+            <svg class="w-3.5 h-3.5 text-[#0A66C2] dark:text-sky-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <!-- Email Pill (Icon + Clean "Email" Text) -->
+          <a href="mailto:talpadaparth1@gmail.com?subject=Custom%20Portfolio%20Website%20Inquiry" class="liquid-btn px-3.5 py-2 rounded-full text-xs font-bold inline-flex items-center gap-1.5 text-slate-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-400" title="Email Parth S Talpada (talpadaparth1@gmail.com)">
+            <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            <span>Email</span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS: CENTRAL CONFIG, CERTIFICATES & TECH BACKGROUND ================= -->
+  <script>
+    lucide.createIcons();
+
+    /* =========================================================================
+       ★ MASTER CONFIGURATION (FILE PATHS & BG STYLE FOR ELAVARASAN S R) ★
+       ========================================================================= */
+    const PORTFOLIO_CONFIG = {
+      // 1. Profile Photo Path (Matches P:\GitHUB\Clients\Elavarasan\profile.png)
+      profilePhoto: "./profile.png",
+      profilePhotoLocalFallback: "file:///P:/GitHUB/Clients/Elavarasan/profile.png",
+
+      // 2. Separate Resume & CV Paths (Matches resume.pdf and cv.pdf in folder)
+      resumePath: "./resume.pdf",
+      cvPath: "./cv.pdf",
+
+      // 3. Tech Background Style (1 to 5 — Mode 4 keeps Cursor Ambient Halo + Repelling Stars)
+      backgroundMode: 4
+    };
+
+    const heroPortrait = document.getElementById('hero-portrait');
+    if (heroPortrait) {
+      heroPortrait.src = PORTFOLIO_CONFIG.profilePhoto;
+    }
+    document.querySelectorAll('.resume-download-link').forEach(link => {
+      link.href = PORTFOLIO_CONFIG.resumePath;
+    });
+    document.querySelectorAll('.cv-download-link').forEach(link => {
+      link.href = PORTFOLIO_CONFIG.cvPath;
+    });
+
+    /* =========================================================================
+       1. VERIFIED CERTIFICATES DATA (cert1.png to cert7.png)
+       ========================================================================= */
+    const CERTIFICATES = [
+      {
+        id: "cert1",
+        image: "./cert1.png",
+        altFiles: ["./cert1.jpg", "./cert1.PNG"],
+        category: "regulatory",
+        badge: "🏛️ NPTEL Elite • 66%",
+        badgeColor: "bg-emerald-500/15 text-emerald-800 dark:text-emerald-300 border-emerald-500/35",
+        title: "Current Regulatory Requirements for Conducting Clinical Trials in India (IND v3.0)",
+        issuer: "NPTEL • IIT Madras",
+        date: "Jul–Sep 2025",
+        credentialId: "ID: NPTEL25GE61S435100984",
+        description: "8-week Govt. of India funded certification on Indian Clinical Trial Regulatory Framework for Investigational New Drugs (v3.0) with 66% Elite score."
+      },
+      {
+        id: "cert2",
+        image: "./cert2.png",
+        altFiles: ["./cert2.jpg", "./cert2.PNG"],
+        category: "regulatory",
+        badge: "🏅 NPTEL Elite • 79%",
+        badgeColor: "bg-emerald-500/15 text-emerald-800 dark:text-emerald-300 border-emerald-500/35",
+        title: "General Pharmacotherapeutics (12-Week Course)",
+        issuer: "NPTEL • IIT (B.H.U.) Varanasi & IIT Madras",
+        date: "Jul–Oct 2026",
+        credentialId: "ID: NPTEL26CH55S972301170",
+        description: "Completed 12-week intensive course in General Pharmacotherapeutics with an Elite consolidated score of 79% (25/25 in Online Assignments, 4 Credits)."
+      },
+      {
+        id: "cert3",
+        image: "./cert3.png",
+        altFiles: ["./cert3.jpg", "./cert3.PNG"],
+        category: "regulatory",
+        badge: "🌐 NIH / NIDA USA",
+        badgeColor: "bg-sky-500/15 text-sky-800 dark:text-sky-300 border-sky-500/35",
+        title: "Good Clinical Practice (GCP ICH E6, Version 5)",
+        issuer: "NIDA Clinical Trials Network • NIH USA",
+        date: "3 Jul 2024",
+        credentialId: "Valid Thru: 3 Jul 2027",
+        description: "6-hour training covering IRBs, Informed Consent, Participant Safety & Adverse Events, Quality Assurance, Research Protocol, and IND regulations."
+      },
+      {
+        id: "cert4",
+        image: "./cert4.png",
+        altFiles: ["./cert4.jpg", "./cert4.PNG"],
+        category: "research",
+        badge: "📄 Published • IF 8.412",
+        badgeColor: "bg-amber-500/15 text-amber-800 dark:text-amber-300 border-amber-500/35",
+        title: "IJIRT Certificate of Publication (Vol. 13, Issue 2)",
+        issuer: "International Journal of Innovative Research in Technology",
+        date: "July 2026",
+        credentialId: "Reg ID: 206387 | ISSN: 2349-6002",
+        description: "Published co-authored research paper on Comparative Evaluation of Topical Pentoxifylline Cream and ZnO Nanoparticle-Loaded Cream for Intermittent Claudication."
+      },
+      {
+        id: "cert5",
+        image: "./cert5.png",
+        altFiles: ["./cert5.jpg", "./cert5.PNG"],
+        category: "pv",
+        badge: "🛡️ Drug Safety (16 Hrs)",
+        badgeColor: "bg-teal-500/15 text-teal-800 dark:text-teal-300 border-teal-500/35",
+        title: "Certificate Course in Pharmacovigilance",
+        issuer: "Vigilance Department • Pharmscape",
+        date: "Feb 2025",
+        credentialId: "Cert No: Ph/Cc/25121244",
+        description: "Successfully completed 16-hour specialized training in Pharmacovigilance, ADR reporting compliance, ICSR workflows, and signal detection."
+      },
+      {
+        id: "cert6",
+        image: "./cert6.png",
+        altFiles: ["./cert6.jpg", "./cert6.PNG"],
+        category: "pv",
+        badge: "⚕️ 15-Days Hands-On",
+        badgeColor: "bg-teal-500/15 text-teal-800 dark:text-teal-300 border-teal-500/35",
+        title: "Hands-on Training: Pharmacovigilance & Drug Safety",
+        issuer: "Researium Labs • Karnataka, India",
+        date: "20 Aug 2026",
+        credentialId: "ID: RL/PVDS/AG/HT/2026/066",
+        description: "Completed 15-day practical hands-on training program on Pharmacovigilance & Drug Safety conducted from 6 August to 20 August 2026."
+      },
+      {
+        id: "cert7",
+        image: "./cert7.png",
+        altFiles: ["./cert7.jpg", "./cert7.PNG"],
+        category: "research",
+        badge: "💼 3-Month Internship",
+        badgeColor: "bg-indigo-500/15 text-indigo-800 dark:text-indigo-300 border-indigo-500/35",
+        title: "Healthcare Content Internship Completion",
+        issuer: "Pill Advise • CliMed Research Solutions",
+        date: "20 Jul 2026",
+        credentialId: "Intern ID: PA4CM050",
+        description: "Completed 3-month online internship (1 Apr – 30 Jun 2026) in evidence-based medical writing, scientific literature review, and clinical fact-checking."
+      }
+    ];
+
+    /* =========================================================================
+       2. SMART CERTIFICATE IMAGE & HIGH-RES EXECUTIVE CANVAS RENDERER
+       ========================================================================= */
+    const certGrid = document.getElementById('certificates-grid');
+
+    function drawFallbackCertificateCanvas(canvas, cert, highRes = false) {
+      const ctx = canvas.getContext('2d');
+      const w = highRes ? 960 : 480;
+      const h = highRes ? 680 : 340;
+      canvas.width = w;
+      canvas.height = h;
+
+      const grad = ctx.createLinearGradient(0, 0, w, h);
+      grad.addColorStop(0, '#ffffff');
+      grad.addColorStop(0.5, '#f8fafc');
+      grad.addColorStop(1, '#eef2f6');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, w, h);
+
+      ctx.strokeStyle = cert.category === 'regulatory' ? '#059669' : (cert.category === 'pv' ? '#0284c7' : '#d97706');
+      ctx.lineWidth = highRes ? 8 : 4;
+      ctx.strokeRect(highRes ? 24 : 12, highRes ? 24 : 12, w - (highRes ? 48 : 24), h - (highRes ? 48 : 24));
+
+      ctx.strokeStyle = '#94a3b8';
+      ctx.lineWidth = highRes ? 2 : 1;
+      ctx.strokeRect(highRes ? 36 : 18, highRes ? 36 : 18, w - (highRes ? 72 : 36), h - (highRes ? 72 : 36));
+
+      ctx.fillStyle = '#0f172a';
+      ctx.textAlign = 'center';
+      ctx.font = `700 ${highRes ? 21 : 10.5}px "Plus Jakarta Sans", sans-serif`;
+      ctx.fillText(cert.issuer.toUpperCase(), w / 2, highRes ? 95 : 48);
+
+      ctx.fillStyle = '#0f766e';
+      ctx.font = `800 ${highRes ? 17 : 8.5}px "JetBrains Mono", monospace`;
+      ctx.fillText(cert.credentialId || cert.badge, w / 2, highRes ? 135 : 68);
+
+      ctx.fillStyle = '#475569';
+      ctx.font = `500 ${highRes ? 18 : 9}px "Plus Jakarta Sans", sans-serif`;
+      ctx.fillText('Awarded To', w / 2, highRes ? 195 : 98);
+
+      ctx.fillStyle = '#0f172a';
+      ctx.font = `800 ${highRes ? 34 : 17}px "Plus Jakarta Sans", sans-serif`;
+      ctx.fillText('ELAVARASAN S R', w / 2, highRes ? 245 : 123);
+
+      ctx.strokeStyle = '#cbd5e1';
+      ctx.beginPath();
+      ctx.moveTo(w * 0.2, highRes ? 270 : 135);
+      ctx.lineTo(w * 0.8, highRes ? 270 : 135);
+      ctx.stroke();
+
+      ctx.fillStyle = '#0f172a';
+      ctx.font = `700 ${highRes ? 24 : 12}px "Plus Jakarta Sans", sans-serif`;
+      const titleWords = cert.title.split(' ');
+      let titleLine = '';
+      let titleY = highRes ? 320 : 160;
+      titleWords.forEach(word => {
+        const test = titleLine + word + ' ';
+        if (ctx.measureText(test).width > w * 0.78) {
+          ctx.fillText(titleLine, w / 2, titleY);
+          titleLine = word + ' ';
+          titleY += highRes ? 30 : 15;
+        } else {
+          titleLine = test;
+        }
+      });
+      ctx.fillText(titleLine, w / 2, titleY);
+
+      ctx.fillStyle = '#475569';
+      ctx.font = `500 ${highRes ? 17 : 8.5}px "Plus Jakarta Sans", sans-serif`;
+      const words = cert.description.split(' ');
+      let line = '';
+      let y = titleY + (highRes ? 42 : 21);
+      words.forEach(word => {
+        const testLine = line + word + ' ';
+        if (ctx.measureText(testLine).width > w * 0.74) {
+          ctx.fillText(line, w / 2, y);
+          line = word + ' ';
+          y += highRes ? 26 : 13;
+        } else {
+          line = testLine;
+        }
+      });
+      ctx.fillText(line, w / 2, y);
+
+      ctx.fillStyle = '#0f766e';
+      ctx.font = `700 ${highRes ? 15 : 8}px "JetBrains Mono", monospace`;
+      ctx.fillText(`Issued: ${cert.date} • Verified Credential`, w / 2, h - (highRes ? 55 : 28));
+    }
+
+    function attachSmartCertImage(imgEl, canvasEl, cert) {
+      const baseName = cert.image.replace(/\.(png|jpg|jpeg|webp)$/i, '');
+      const candidates = [
+        cert.image,
+        `${baseName}.png`,
+        `${baseName}.jpg`,
+        `${baseName}.jpeg`,
+        `${baseName}.PNG`,
+        `${baseName}.JPG`,
+        ...(cert.altFiles || [])
+      ];
+      const uniqueCandidates = [...new Set(candidates)];
+      let attempt = 0;
+
+      function tryNext() {
+        if (attempt >= uniqueCandidates.length) {
+          imgEl.classList.add('hidden');
+          canvasEl.classList.remove('hidden');
+          drawFallbackCertificateCanvas(canvasEl, cert, false);
+          return;
+        }
+        const candidateSrc = uniqueCandidates[attempt++];
+        imgEl.src = candidateSrc;
+      }
+
+      imgEl.onload = () => {
+        cert.resolvedImage = imgEl.src;
+        imgEl.classList.remove('hidden');
+        canvasEl.classList.add('hidden');
+      };
+      imgEl.onerror = tryNext;
+
+      tryNext();
+    }
+
+    function buildCertificateCards() {
+      certGrid.innerHTML = '';
+      CERTIFICATES.forEach((cert, index) => {
+        const card = document.createElement('article');
+        card.setAttribute('data-category', cert.category);
+        card.className = `cert-item liquid-glass rounded-3xl p-4 sm:p-5 flex flex-col justify-between space-y-4 group`;
+
+        card.innerHTML = `
+          <div class="space-y-4">
+            <!-- Certificate Default Preview Box + High-Contrast Dark Glass Eye Button -->
+            <div class="relative rounded-2xl overflow-hidden bg-slate-900/20 border border-slate-300/80 dark:border-white/20 aspect-[16/11] flex items-center justify-center cursor-pointer cert-preview-trigger" data-index="${index}">
+              <img id="cert-img-${index}" class="w-full h-full object-cover transition duration-500 group-hover:scale-[1.02]" alt="${cert.title}" />
+              <canvas id="cert-canvas-${index}" class="hidden w-full h-full object-cover transition duration-500 group-hover:scale-[1.02]"></canvas>
+
+              <!-- High-Contrast Dark Liquid Glass Eye Button -->
+              <button type="button" aria-label="View Full Certificate" class="cert-eye-btn cert-eye-glass absolute top-3 left-3 w-10 h-10 rounded-full flex items-center justify-center transition duration-300" data-index="${index}" title="View full certificate">
+                <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Badge, Title & Aligned Short Description -->
+            <div class="space-y-2 px-1">
+              <div class="flex items-center justify-between gap-2">
+                <span class="px-3 py-1 rounded-full text-[11px] font-mono font-bold border ${cert.badgeColor}">
+                  ${cert.badge}
+                </span>
+                <span class="text-[11px] font-mono font-medium text-slate-600 dark:text-slate-400">${cert.date}</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-extrabold leading-snug text-slate-900 dark:text-white">${cert.title}</h3>
+              <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                ${cert.description}
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-3 px-1 border-t border-slate-200 dark:border-white/10 flex items-center justify-between text-[11px] font-mono text-slate-600 dark:text-slate-400">
+            <span class="truncate">${cert.issuer}</span>
+            <button type="button" class="cert-preview-link text-emerald-700 dark:text-emerald-400 font-bold hover:underline shrink-0 ml-2" data-index="${index}">
+              Full Image →
+            </button>
+          </div>
+        `;
+
+        certGrid.appendChild(card);
+
+        const imgEl = document.getElementById(`cert-img-${index}`);
+        const canvasEl = document.getElementById(`cert-canvas-${index}`);
+        attachSmartCertImage(imgEl, canvasEl, cert);
+      });
+
+      lucide.createIcons();
+      attachInteractiveGlassListeners();
+    }
+
+    buildCertificateCards();
+
+    /* =========================================================================
+       3. FULL-IMAGE CERTIFICATE MODAL
+       ========================================================================= */
+    const certModal = document.getElementById('cert-modal');
+    const modalCanvas = document.getElementById('modal-canvas');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalBadge = document.getElementById('modal-badge');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalIssuer = document.getElementById('modal-issuer');
+    const modalPdfLink = document.getElementById('modal-pdf-link');
+
+    function openCertificateModal(index) {
+      const cert = CERTIFICATES[index];
+      if (!cert) return;
+
+      modalTitle.textContent = cert.title;
+      modalBadge.textContent = cert.badge;
+      modalDesc.textContent = cert.description;
+      modalIssuer.textContent = `${cert.issuer} (${cert.date})`;
+
+      if (cert.resolvedImage) {
+        modalPdfLink.href = cert.resolvedImage;
+        modalPdfLink.classList.remove('hidden');
+        modalPdfLink.classList.add('inline-flex');
+      } else {
+        modalPdfLink.classList.add('hidden');
+        modalPdfLink.classList.remove('inline-flex');
+      }
+
+      certModal.classList.remove('hidden');
+      certModal.classList.add('flex');
+
+      if (cert.resolvedImage) {
+        modalImg.src = cert.resolvedImage;
+        modalImg.classList.remove('hidden');
+        modalCanvas.classList.add('hidden');
+      } else {
+        modalImg.classList.add('hidden');
+        modalCanvas.classList.remove('hidden');
+        drawFallbackCertificateCanvas(modalCanvas, cert, true);
+      }
+    }
+
+    document.addEventListener('click', (e) => {
+      const trigger = e.target.closest('.cert-preview-trigger, .cert-eye-btn, .cert-preview-link');
+      if (trigger) {
+        const index = parseInt(trigger.getAttribute('data-index'), 10);
+        openCertificateModal(index);
+      }
+    });
+
+    document.getElementById('modal-close').addEventListener('click', () => {
+      certModal.classList.add('hidden');
+      certModal.classList.remove('flex');
+    });
+
+    certModal.addEventListener('click', (e) => {
+      if (e.target === certModal) {
+        certModal.classList.add('hidden');
+        certModal.classList.remove('flex');
+      }
+    });
+
+    /* =========================================================================
+       4. CATEGORY FILTERING FOR CERTIFICATES
+       ========================================================================= */
+    const filterBtns = document.querySelectorAll('.cert-filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        filterBtns.forEach(b => b.classList.remove('liquid-btn-primary'));
+        btn.classList.add('liquid-btn-primary');
+
+        document.querySelectorAll('.cert-item').forEach(card => {
+          const cat = card.getAttribute('data-category');
+          card.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+        });
+      });
+    });
+
+    /* =========================================================================
+       5. SUBTLE LIQUID GLASS SPECULAR TRACKING
+       ========================================================================= */
+    function attachInteractiveGlassListeners() {
+      const glassElements = document.querySelectorAll('.liquid-glass');
+      glassElements.forEach(card => {
+        const handleMove = (clientX, clientY) => {
+          const rect = card.getBoundingClientRect();
+          card.style.setProperty('--card-x', `${clientX - rect.left}px`);
+          card.style.setProperty('--card-y', `${clientY - rect.top}px`);
+        };
+        card.addEventListener('mousemove', (e) => handleMove(e.clientX, e.clientY));
+        card.addEventListener('touchmove', (e) => {
+          if (e.touches[0]) handleMove(e.touches[0].clientX, e.touches[0].clientY);
+        }, { passive: true });
+      });
+    }
+    attachInteractiveGlassListeners();
+
+    /* =========================================================================
+       6. THEME TOGGLE & MOBILE MENU
+       ========================================================================= */
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    /* =========================================================================
+       7. MULTI-MODE EXECUTIVE TECH BACKGROUND + CURSOR-REPELLED STARS
+       ========================================================================= */
+    const canvas = document.getElementById('tech-bg-canvas');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+    let wavePhase = 0;
+
+    const pointer = {
+      x: -1000,
+      y: -1000,
+      smoothX: -1000,
+      smoothY: -1000,
+      active: false,
+      repelRadius: 165
+    };
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      initStars();
+    }
+
+    function initStars() {
+      stars = [];
+      const count = Math.min(105, Math.floor((canvas.width * canvas.height) / 13500));
+      for (let i = 0; i < count; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.28,
+          vy: (Math.random() - 0.5) * 0.28,
+          pushX: 0,
+          pushY: 0,
+          size: Math.random() * 2.1 + 1.2,
+          twinklePhase: Math.random() * Math.PI * 2,
+          twinkleSpeed: Math.random() * 0.028 + 0.01
+        });
+      }
+    }
+
+    window.addEventListener('mousemove', (e) => {
+      pointer.x = e.clientX;
+      pointer.y = e.clientY;
+      if (!pointer.active) {
+        pointer.smoothX = pointer.x;
+        pointer.smoothY = pointer.y;
+        pointer.active = true;
+      }
+    });
+
+    window.addEventListener('touchmove', (e) => {
+      if (e.touches[0]) {
+        pointer.x = e.touches[0].clientX;
+        pointer.y = e.touches[0].clientY;
+        pointer.active = true;
+      }
+    }, { passive: true });
+
+    window.addEventListener('mouseout', () => {
+      pointer.active = false;
+    });
+
+    window.addEventListener('resize', resizeCanvas);
+
+    function drawStarShape(x, y, radius, alpha, isDark) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.fillStyle = isDark
+        ? `rgba(226, 232, 240, ${alpha})`
+        : `rgba(30, 41, 59, ${alpha * 0.72})`;
+
+      ctx.beginPath();
+      const inner = radius * 0.32;
+      const outer = radius * 1.65;
+      for (let i = 0; i < 4; i++) {
+        const angle = (i * Math.PI) / 2;
+        ctx.lineTo(Math.cos(angle) * outer, Math.sin(angle) * outer);
+        const midAngle = angle + Math.PI / 4;
+        ctx.lineTo(Math.cos(midAngle) * inner, Math.sin(midAngle) * inner);
+      }
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function animateTechBackground() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const isDark = document.documentElement.classList.contains('dark');
+      const mode = PORTFOLIO_CONFIG.backgroundMode || 1;
+
+      if (pointer.active) {
+        pointer.smoothX += (pointer.x - pointer.smoothX) * 0.14;
+        pointer.smoothY += (pointer.y - pointer.smoothY) * 0.14;
+      }
+
+      if (mode === 3) {
+        const dotSpacing = 44;
+        ctx.fillStyle = isDark ? 'rgba(148, 163, 184, 0.11)' : 'rgba(15, 23, 42, 0.08)';
+        for (let x = 22; x < canvas.width; x += dotSpacing) {
+          for (let y = 22; y < canvas.height; y += dotSpacing) {
+            ctx.fillRect(x, y, 1.5, 1.5);
+          }
+        }
+      }
+
+      if (mode === 4 && pointer.active) {
+        const grad = ctx.createRadialGradient(
+          pointer.smoothX, pointer.smoothY, 10,
+          pointer.smoothX, pointer.smoothY, 320
+        );
+        grad.addColorStop(0, isDark ? 'rgba(16, 185, 129, 0.11)' : 'rgba(16, 185, 129, 0.09)');
+        grad.addColorStop(1, 'transparent');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+      }
+
+      if (mode === 5) {
+        wavePhase += 0.012;
+        for (let w = 0; w < 3; w++) {
+          ctx.beginPath();
+          ctx.lineWidth = 1.2;
+          ctx.strokeStyle = isDark
+            ? `rgba(56, 189, 248, ${0.09 - w * 0.02})`
+            : `rgba(15, 118, 110, ${0.08 - w * 0.02})`;
+          for (let x = 0; x <= canvas.width; x += 24) {
+            const y = canvas.height * (0.3 + w * 0.22) +
+                      Math.sin(x * 0.003 + wavePhase + w) * 38;
+            if (x === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          }
+          ctx.stroke();
+        }
+      }
+
+      for (let i = 0; i < stars.length; i++) {
+        const s = stars[i];
+        s.x += s.vx;
+        s.y += s.vy;
+
+        if (s.x < 0) s.x = canvas.width;
+        if (s.x > canvas.width) s.x = 0;
+        if (s.y < 0) s.y = canvas.height;
+        if (s.y > canvas.height) s.y = 0;
+
+        if (pointer.active) {
+          const dx = (s.x + s.pushX) - pointer.smoothX;
+          const dy = (s.y + s.pushY) - pointer.smoothY;
+          const dist = Math.hypot(dx, dy);
+
+          if (dist < pointer.repelRadius && dist > 0.1) {
+            const repelForce = Math.pow((pointer.repelRadius - dist) / pointer.repelRadius, 2) * 9.5;
+            s.pushX += (dx / dist) * repelForce;
+            s.pushY += (dy / dist) * repelForce;
+          }
+        }
+
+        s.pushX *= 0.90;
+        s.pushY *= 0.90;
+
+        const sx = s.x + s.pushX;
+        const sy = s.y + s.pushY;
+
+        if (mode === 1) {
+          for (let j = i + 1; j < stars.length; j++) {
+            const s2 = stars[j];
+            const s2x = s2.x + s2.pushX;
+            const s2y = s2.y + s2.pushY;
+            const dist = Math.hypot(sx - s2x, sy - s2y);
+            if (dist < 115) {
+              const lineAlpha = (1 - dist / 115) * (isDark ? 0.16 : 0.11);
+              ctx.beginPath();
+              ctx.strokeStyle = isDark
+                ? `rgba(148, 163, 184, ${lineAlpha})`
+                : `rgba(51, 65, 85, ${lineAlpha})`;
+              ctx.lineWidth = 0.8;
+              ctx.moveTo(sx, sy);
+              ctx.lineTo(s2x, s2y);
+              ctx.stroke();
+            }
+          }
+        }
+
+        s.twinklePhase += s.twinkleSpeed;
+        const alpha = 0.45 + Math.sin(s.twinklePhase) * 0.35;
+        drawStarShape(sx, sy, s.size, alpha, isDark);
+      }
+
+      requestAnimationFrame(animateTechBackground);
+    }
+
+    resizeCanvas();
+    animateTechBackground();
+  </script>
+</body>
+</html>
